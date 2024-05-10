@@ -204,7 +204,8 @@ Training Accuracy: 100%
 Testing Accuracy: 79%
 The training accuracy of 1.0 indicated that the SVM model had perfectly fit the training data, correctly predicting all labels. However, with a testing accuracy of 0.79, the model seemed to generalize better to unseen data compared to the Naive Bayes model and Decision Trees model. This suggested that the decision tree model was more robust and better for making accurate predictions on new data.
 
-**Model Deployment**
+# Model Deployment
+
 Written down are the steps that were taken after connecting to the EC2 server in AWS.
 **Updating the system**
 sudo apt-get update
