@@ -205,7 +205,37 @@ Testing Accuracy: 79%
 The training accuracy of 1.0 indicated that the SVM model had perfectly fit the training data, correctly predicting all labels. However, with a testing accuracy of 0.79, the model seemed to generalize better to unseen data compared to the Naive Bayes model and Decision Trees model. This suggested that the decision tree model was more robust and better for making accurate predictions on new data.
 
 # Model Deployment
-In progress...
+
+# Updating the system
+sudo apt-get update
+
+# Installing python3 and pip
+sudo apt install python3 python3-pip -y
+
+# Installing python3 virtual environment module
+sudo apt install python3-venv -y
+
+# Navigating to cloned repository path after cloning the git repository
+cd model-deployment
+
+# Creating a virtual environment
+python3 -m venv myenv
+
+# Activating virtual environemnt
+source myenv/bin/activate
+
+# Installing django within virtual environment
+pip install django
+
+# Installing many libraries that were used during data collection part of the project
+pip install librosa
+pip install youtube_dl
+pip install pychorus
+...
+
+# Running the server
+python manage.py runserver
+http://127.0.0.1:8000/
 
 
 
